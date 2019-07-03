@@ -7,6 +7,7 @@ import { ListaComponent } from './lista/lista.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataApiService } from './services/data-api.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [DataApiService],
   bootstrap: [AppComponent]

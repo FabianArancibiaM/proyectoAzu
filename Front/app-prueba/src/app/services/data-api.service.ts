@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
   providedIn:'root'
 })
 export class DataApiService {
-  private apiUrl = 'http://192.168.0.18:8082/api/cliente';
+  private apiUrl = 'http://localhost:8082/api/cliente';
 
   constructor(private _http:HttpClient) { }
 
